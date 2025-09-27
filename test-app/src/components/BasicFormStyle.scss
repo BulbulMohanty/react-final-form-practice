@@ -1,0 +1,132 @@
+form {
+background-color: lightgrey;
+}
+
+input, select, textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;  /* Approximately 5 lines */
+  resize: vertical;   /* Allow vertical resizing only */
+  line-height: 1.5;  /* Comfortable line spacing */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.output {
+  font-weight: bold;
+  color: #1e852c;
+  border: 1px solid black;
+  background: #f8f8f8;
+}
+
+.error {
+  font-weight: bold;
+  color: #ec4807;
+  border: 1px solid black;
+  background: #f8f8f8;
+}
+
+form > label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.file-upload-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  .file-input {
+    width: auto;
+    padding: 0.5rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &::-webkit-file-upload-button {
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 1rem;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
+.submit-button {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+
+  &:disabled {
+    background-color: #666666;
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.employed-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .employed-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+
+    .radio-label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+
+      input[type="radio"] {
+        margin: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+}
+
