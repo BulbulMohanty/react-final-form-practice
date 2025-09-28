@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import BasicForm from './components/basicForm/BasicForm'
+import BasicForm from './components/form-level-validation/BasicForm'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 
