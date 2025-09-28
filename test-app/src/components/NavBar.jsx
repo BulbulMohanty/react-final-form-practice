@@ -6,10 +6,10 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <NavLink to="/" end>Home</NavLink>
-        </li>
+          <NavLink to="/form-level-validation">Form Level Validation</NavLink>
+          </li>
         <li>
-          <NavLink to="/basic-form">Basic Form</NavLink>
+          <NavLink to="/field-level-validation">Field Level Validation</NavLink>
         </li>
       </ul>
     </nav>
